@@ -1,0 +1,21 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <!-- Correct driver class -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+        <!-- Correct PostgreSQL JDBC URL -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/myDB</property>
+
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!-- Dialect and extras -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Optional: Mapping classes -->
+        <!-- <mapping class="com.practice.hibernate.YourEntity"/> -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+    </session-factory>
+</hibernate-configuration>
