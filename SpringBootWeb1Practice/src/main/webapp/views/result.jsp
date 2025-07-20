@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h2 class="form-heading">Result: </h2>
+        <h2 class="form-heading">Result: ${result} </h2>
 
     </body>
 </html>
